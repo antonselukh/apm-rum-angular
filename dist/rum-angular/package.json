@@ -1,0 +1,38 @@
+{
+  "name": "@elastic/apm-rum-angular",
+  "version": "1.0.0",
+  "description": "Elastic APM Real User Monitoring for Angular applications",
+  "homepage": "https://www.elastic.co/guide/en/apm/agent/rum-js/current/index.html",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "directory": "dist/rum-angular"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elastic/apm-agent-rum-js.git",
+    "directory": "packages/rum-angular"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "dependencies": {
+    "@elastic/apm-rum": "^5.0.0",
+    "@elastic/apm-rum-core": "^5.0.0",
+    "tslib": "^1.10.0"
+  },
+  "peerDependencies": {
+    "@angular/core": ">=8.0.0",
+    "@angular/router": ">=8.0.0"
+  },
+  "main": "bundles/elastic-apm-rum-angular.umd.js",
+  "module": "fesm5/elastic-apm-rum-angular.js",
+  "es2015": "fesm2015/elastic-apm-rum-angular.js",
+  "esm5": "esm5/elastic-apm-rum-angular.js",
+  "esm2015": "esm2015/elastic-apm-rum-angular.js",
+  "fesm5": "fesm5/elastic-apm-rum-angular.js",
+  "fesm2015": "fesm2015/elastic-apm-rum-angular.js",
+  "typings": "elastic-apm-rum-angular.d.ts",
+  "metadata": "elastic-apm-rum-angular.metadata.json",
+  "sideEffects": false
+}
