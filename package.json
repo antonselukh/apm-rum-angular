@@ -16,56 +16,23 @@
   "engines": {
     "node": ">=8.0.0"
   },
-  "scripts": {
-    "prepublishOnly": "npm run build",
-    "ng": "ng",
-    "start": "ng serve app",
-    "build": "ng build --prod",
-    "lint": "ng lint",
-    "test:unit": "ng test",
-    "test:e2e": "ng e2e app",
-    "script": "node ../../dev-utils/run-script.js",
-    "karma:dev": "ng test --watch"
-  },
   "dependencies": {
     "@elastic/apm-rum": "^5.0.0",
-    "@elastic/apm-rum-core": "^5.0.0"
-  },
-  "devDependencies": {
-    "@angular-devkit/build-angular": "~0.901.0",
-    "@angular-devkit/build-ng-packagr": "~0.901.0",
-    "@angular/animations": "~9.1.0",
-    "@angular/cli": "~9.1.0",
-    "@angular/common": "~9.1.0",
-    "@angular/compiler": "~9.1.0",
-    "@angular/compiler-cli": "~9.1.0",
-    "@angular/core": "~9.1.0",
-    "@angular/language-service": "~9.1.0",
-    "@angular/platform-browser": "~9.1.0",
-    "@angular/platform-browser-dynamic": "~9.1.0",
-    "@angular/router": "~9.1.0",
-    "@types/jasmine": "~3.5.0",
-    "@types/jasminewd2": "~2.0.3",
-    "@types/node": "^12.11.1",
-    "codelyzer": "^5.1.2",
-    "jasmine-core": "~3.5.0",
-    "jasmine-spec-reporter": "~4.2.1",
-    "karma": "~4.4.1",
-    "karma-chrome-launcher": "~3.1.0",
-    "karma-coverage-istanbul-reporter": "~2.1.0",
-    "karma-jasmine": "~3.0.1",
-    "karma-jasmine-html-reporter": "^1.4.2",
-    "ng-packagr": "^9.0.0",
-    "protractor": "~5.4.3",
-    "rxjs": "~6.5.4",
-    "ts-node": "~8.3.0",
-    "tslib": "^1.10.0",
-    "tslint": "~6.1.0",
-    "typescript": "~3.8.3",
-    "zone.js": "~0.10.2"
+    "@elastic/apm-rum-core": "^5.0.0",
+    "tslib": "^1.10.0"
   },
   "peerDependencies": {
     "@angular/core": ">=8.0.0",
     "@angular/router": ">=8.0.0"
-  }
+  },
+  "main": "bundles/elastic-apm-rum-angular.umd.js",
+  "module": "fesm5/elastic-apm-rum-angular.js",
+  "es2015": "fesm2015/elastic-apm-rum-angular.js",
+  "esm5": "esm5/elastic-apm-rum-angular.js",
+  "esm2015": "esm2015/elastic-apm-rum-angular.js",
+  "fesm5": "fesm5/elastic-apm-rum-angular.js",
+  "fesm2015": "fesm2015/elastic-apm-rum-angular.js",
+  "typings": "elastic-apm-rum-angular.d.ts",
+  "metadata": "elastic-apm-rum-angular.metadata.json",
+  "sideEffects": false
 }
